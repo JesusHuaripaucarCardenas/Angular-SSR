@@ -3,7 +3,7 @@ import { FormsVendedor } from '../app/feature/forms/forms-vendedor/forms-vendedo
 import { FormsSupermercado } from '../app/feature/forms/forms-supermercado/forms-supermercado';
 import { Contactos } from './feature/contacto/contactos/contactos';
 import { PerfilMercado } from './feature/perfil/perfil-mercado/perfil-mercado';
-import { PerfilSupermercado } from './feature/perfil/perfil-supermercado/perfil-supermercado';
+import { Inicio } from './feature/inicio/inicio/inicio';
 
 export const routes: Routes = [
     {
@@ -23,12 +23,12 @@ export const routes: Routes = [
         component: PerfilMercado
     },
     {
-        path: 'perfil-supermercado',
-        component: PerfilSupermercado
+        path: 'inicio',
+        component: Inicio
     },
     {
         path: '',
         pathMatch: 'full',
-        component: PerfilMercado 
+        redirectTo: 'inicio'
     }
 ];

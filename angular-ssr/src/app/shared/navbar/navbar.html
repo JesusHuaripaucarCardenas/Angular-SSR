@@ -1,46 +1,27 @@
 <nav class="navbar">
-  <div class="imagen-logo" (click)="onLogoClick()">
-    <div class="logo">
-      <i class="fas fa-mountain"></i>
-    </div>
-  </div>
-  
+<a [routerLink]="['/inicio']" class="logo">
+  Logo
+</a>
+
+
   <div class="search-container">
-    <input 
-      type="text" 
-      class="search-box" 
-      [(ngModel)]="searchQuery"
-      [placeholder]="currentPlaceholder"
-      (keyup.enter)="onSearch()">
-    <i class="fas fa-search search-icon" (click)="onSearch()"></i>
+    <input type="text" class="search-box" placeholder="Buscar...">
+    <span class="search-icon"></span>
   </div>
-  
+
   <div class="nav-icons">
-    <div class="img-notificacion nav-icon" (click)="onNotificationClick()">
-      <i class="fas fa-bell"></i>
-      <span class="notification-badge" *ngIf="notificationCount > 0">
-        {{ notificationCount }}
-      </span>
-    </div>
-    
-    <div class="perfil nav-icon dropdown" 
-         (mouseenter)="showProfileMenu = true" 
-         (mouseleave)="showProfileMenu = false">
-      <i class="fas fa-user-circle" (click)="onProfileClick()"></i>
-      <div class="dropdown-content" *ngIf="showProfileMenu">
-        <a href="#" class="dropdown-item" (click)="goToProfile(); $event.preventDefault()">
-          <i class="fas fa-user"></i>
-          Mi Perfil
-        </a>
-        <a href="#" class="dropdown-item" (click)="logout(); $event.preventDefault()">
-          <i class="fas fa-sign-out-alt"></i>
-          Cerrar Sesión
-        </a>
-      </div>
-    </div>
-    
-    <div class="menu nav-icon" (click)="onMenuClick()">
-      <i class="fas fa-bars"></i>
-    </div>
+    <span class="nav-icon bell">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAADb0lEQVR4AeyaAXbjIAxEm73YtidrerJ2T+adSZGf4BmQwDh2yz6IAQtpvuQkdrZ/Xn7hvwn9W4o+Kz0r/YMzMC/vI4q7LMtr6Hcej4iZxmiuNAR/ot9Th6U57D9xXvo7x1jz+mCyGPsV+5taEzSEUjiDUrgpsNqT2r+Hc+l6bs6YjE0NOZviuhsaAlkZBqXjD77UerJny5yXvBVijQm/1j1RTBc0ghCYmaaTr9vtxjnHmx32AiN7Nu3C4sMWe4o+Q0wB556iffAdHVzQ2LmKR/A3zLMtiGcl5KrI2qoTtOXlju1LFgaxee4r7KM994Vp/WCGhgoGEo9ZYNgx+wsM1wRh3NIIo2NGPgCuNbhimaABwuDi+AMBJcuRENgx46xutN4xKYLDr77MGRtL9WaC1m4AzATopcd4APDDL16y4EGLFMCcbCv0WmWIyDVz0JyDwrqAb5lItV9C4rdsorUqNBzpykpWIyeJTXRux4kkPnKJamtNmzbRBkyq0LD5i/5oSYDHWngxBQu2zYdCcgXc9L62QIuj9TLSqgtCtNle41xyV23QI3qzMYvQFgfwnBOCU/u3LU3JFdgHDcnagVxCWP5uEKDf79+L41+7k1ystNafZFOfOnqsC6FjS1HWzyB9Uo/N0HqTGlcDKNvTDGvQAiVZTIXnsp7a7TrH26orbg2an4oE/rer6jHOzFqL0Hwfo7+hP+MDy5UaaOSjrklrEdoV9ULGE/pCxeqSOivtSV/v14Yn1t62PZXu+q7sBOm6FW2CRpX5g4EzcCdmvJ2/w1FDvGqcuaABK8GeWWVBoxZIWtz3EC5oRGN2zwAMKWvjT0kuTWZopNSd0VXW+IHrrWaGhm6XY9gf2Xipm6ttgkaVzQ6PJG2NZYLmzXxrgKP2eTSaoINwPrqF4ekOLm1maGSSH2R8tj4dcdBm1mWGpkc453+aMatngKcGPkPfqM3TXdB0DPA7Oh/WcXhqowYWgbJc3Q3t8n5S4wl90sLsLmtWeu+U4k6Of++Fg6/trSP1N7rS/HpLY9bmLXtqPqPzNuhoi32CLzR+l3og+PcsvAmyB2mwHApNPQAnhAX8EGBqGg7NIARH553TFjyvBt5oMDk0H94PgRYKgPNuDoeoEZjgYjb8eCj0cBpjgAltTNTlzWalL19CI8CstDFRlzf7DwAA//+1lesZAAAABklEQVQDADhQUIpYl6L6AAAAAElFTkSuQmCC" alt="Notificaciones" />
+    </span>
+<a [routerLink]="['/perfil-mercado']">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAADgElEQVR4AeyYC3ajMAxFYTY26crarqydlWXeJdY54PCRv/Q09Fh1sGVJ189JCH+GF/y7oF9F9EvpS+lfvAPX8f7F4i7QLqUX21H54n6/32Rfsrgx9lE53W645kqLcIJVFV+ymyxujL3Lj9YFvhm0CI5gY3iugf9gLRetrAm0ikaxLWWPWN7l0PTIV4UWrKlL4aq9qKG6Qt7ZwKJA8eIq0KrMYHPVjeuaXwNf9cgXQwsYJVrALsB1Ue3IZ0ML1tStcZTF5GqortRlRz4LWll7qLu3C8BTw57P5lwydADuqe5W8YDzttqa3xxPgv5BwAbEWyxZ8SRoZfoJCquMRUNx7uoWg3sXbuig8l4s79y3HLHP0KsrbkliuKFVVlJg+cftc3z8vanDPkI/ypENUJfd2iidXc5j4QT5ePn8X/BsQBG8TqIb3KV0SsBnpAGFOc4rU8sh4DXi8pVfdnNBZ0cfJuDUT9fSo35YblPooNxhEXMHrUFpbD5c9XVT6IJK/xWsPVzaErpErZK1p0IfJj/LoaXSJUy3ksVHa1tCNy38CGxvviX0oO/31K8rq7X07s/irPZNoZVx9mNAV45WsFGO6A+X1tBkcasWgN3+BM+xHtD85hXP9iMeTeLDA4HmwGxSD2jyYBz16eGeIKenm+q5Bhbr9sHngg63hhReaoChJmagjJXGTVrvgg4Rm94lhRzZXYowKdDNf/1kEw9DUm1u6JSdXCmeU4JR3JYxv7L0eEi1Jd0PuKFD6rfQezogeGKimkZ6jCckW8Y8T0/IwcZ4cuCT4ov/kAQ9jiMgniQAYPhPibz/yCFjY0atOcrFU5kklRUzDZoFFKR+qxggs2AV86kd5MoCJkmS0izAKEa2psRN85i68qbvcWL9jSLZxiYrbHGyoG2xwEkcvwe5CWHc3JJ7YGV8j2OAE8Ngi09SETSVCPxbBuT8yAOuurdvPVm7ZlpErDksbhzlYlgCYcXQBMEAl8VH3g0v2LX7b1OXjSBNFasGbdUInAJXj7zAmDPXqdeYwc7VNdhq6k7Jwr/q0MQV+OqR15wpP/3QEPBdY3NYXQ5VjzIBY/NBx6uc14Lf+r7lwwmbRzJ1n07D3KnG66bQVmAEzwcegGa8FTjGGGO2rFnfBdqqD/CoD6AZb4UusFZHV2hLenZ/QZ+tQK/8l9K9dvrsPJfSZyvQK/9LKv0fAAD//0AMhdkAAAAGSURBVAMAii10ikItPk4AAAAASUVORK5CYII=" alt="Perfil de usuario" />
+</a>
+
+
+
+<a [routerLink]="['/contactos']">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAYAAAAeYmHpAAAByElEQVR4AeyYAW7CMAxF111scDLKyWAn6/6vhkSQXJzWrRNjFNOGRHy//GAC318f+EjoTzE9nU6nA69Abu/A5hZo6XSxHIE76XRgcwu0dLpYjsCddDqwuQVab04Xya/tmEFP03Tyilp4E2jAjhC+eQX02U7QVzUTaCjdEa5tGAZ1DibQFEQMoD57xL82pHXNBPohBfG7Rzz0tVdTaK2o97yEXnIA5XFE3BCs1EtTmx9TOQ1Qfh1cQDNf0e8aXAUN2Nd26Rl8LTQXgeBgn7pzfQs0wRmE7wrcAvotOLYDiyAuu7WqRbeCnsH5JMSP8LrVy9xtLLKq97OEvi4o/mKM43vFmSdBaKiaBTQP+hQVtxgSGncO5qAC5qSt0DxrE1ghSrk2Ygv0Fe7xV1UbJBVZrIGmq3RX3M4V+i5TVdBwlKBzEcI9gdl3SdhCVAVNIcDOxYj3vYcaunfQ5/wT+nk1au9xwORfwDxuukRNviZOA5iVnH8B8ze3SyCHw4+h3tWchyR1DiZOo7JTFBe3VnVIMoGu+Ty1MDehW3DhiBzS6SNWuQWNdFp0IdhAOh3MUBEnnRaXJthAOh3MUBEnnRaXJthAOh3MUBHnDwAA//+8A3l7AAAABklEQVQDAOo244pXeJkBAAAAAElFTkSuQmCC" alt="contactos" />
+</a>
+
   </div>
 </nav>
