@@ -1,0 +1,258 @@
+.registro {
+  background-color: #fbf5e2;
+  width: 100%;
+  min-width: 1728px;
+  min-height: 1117px;
+  position: relative;
+}
+
+.registro .formulario-vendedor {
+  position: absolute;
+  top: 272px;
+  left: 470px;
+  width: 811px;
+  height: 736px;
+}
+
+.registro .cont-forms {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 809px;
+  height: 736px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.registro .btn-agregar {
+  position: absolute;
+  top: 635px;
+  left: 303px;
+  width: 185px;
+  height: 43px;
+}
+
+.registro .agregar-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 183px;
+  height: 43px;
+  background-color: #229935;
+  border-radius: 90px;
+}
+
+.registro .agregar {
+  position: absolute;
+  top: 7px;
+  left: 48px;
+  width: 86px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.registro .datos {
+  position: absolute;
+  top: 36px;
+  left: 333px;
+  width: 122px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.registro .ciudad-forms {
+  position: absolute;
+  top: 153px;
+  left: 91px;
+  width: 407px;
+  height: 39px;
+  display: flex;
+  gap: 36px;
+}
+
+.registro .ciudad {
+  margin-top: 4px;
+  width: 119px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.registro .div {
+  width: 250px;
+  height: 39px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.registro .distrito-forms {
+  position: absolute;
+  top: 230px;
+  left: 91px;
+  width: 407px;
+  height: 39px;
+  display: flex;
+  gap: 30px;
+}
+
+.registro .distrito {
+  margin-top: 4px;
+  width: 125px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.registro .ruc-forms {
+  position: absolute;
+  top: 384px;
+  left: 91px;
+  width: 337px;
+  height: 39px;
+  display: flex;
+  gap: 20px;
+}
+
+.registro .ruc {
+  margin-top: 4px;
+  width: 90px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.registro .ruc-input {
+  width: 225px;
+  height: 39px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.registro .supermercado-forms {
+  position: absolute;
+  top: 307px;
+  left: 91px;
+  width: 576px;
+  height: 39px;
+  display: flex;
+  gap: 24px;
+}
+
+.registro .supermercado {
+  width: 211px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.registro .supermercado-input {
+  width: 339px;
+  height: 39px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.registro .telefono-forms {
+  position: absolute;
+  top: 461px;
+  left: 91px;
+  width: 348px;
+  height: 39px;
+  display: flex;
+  gap: 7px;
+}
+
+.registro .telefono {
+  margin-top: 4px;
+  width: 149px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.registro .telefono-input {
+  width: 190px;
+  height: 39px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.registro .email-forms {
+  position: absolute;
+  top: 810px;
+  left: 561px;
+  width: 529px;
+  height: 39px;
+  display: flex;
+  gap: 20px;
+}
+
+.registro .email {
+  margin-top: 4px;
+  width: 90px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.registro .email-input {
+  width: 417px;
+  height: 39px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #000000;
+}

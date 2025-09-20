@@ -1,0 +1,498 @@
+.contactos {
+  background-color: #fbf5e2;
+  width: 100%;
+  min-width: 1728px;
+  min-height: 1862px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactos .text-wrapper {
+  margin-left: 764px;
+  width: 199px;
+  height: 54px;
+  margin-top: 231px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 45px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .datos-super {
+  margin-left: 344px;
+  width: 1041px;
+  height: 410px;
+  position: relative;
+  margin-top: 72px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.contactos .dats-super {
+  height: 410px;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 122px;
+  background-color: #000000;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.contactos .btn-editar-super {
+  height: 205px;
+  position: absolute;
+  top: 0;
+  left: 919px;
+  width: 122px;
+  display: flex;
+  background-color: #298ce9;
+}
+
+.contactos .img {
+  margin-top: 74px;
+  width: 61px;
+  height: 61px;
+  margin-left: 30px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.contactos .btn-eliminar-super {
+  top: 205px;
+  left: 918px;
+  height: 205px;
+  position: absolute;
+  width: 122px;
+  display: flex;
+  background-color: #ff0000;
+}
+
+.contactos .eliminar-super {
+  margin-top: 59px;
+  margin-left: 31px;
+  width: 61px;
+  height: 61px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.contactos .perfil-super {
+  top: 144px;
+  left: 0;
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.contactos .correo-registro {
+  position: absolute;
+  top: 335px;
+  left: 183px;
+  width: 616px;
+  height: 31px;
+  display: flex;
+  gap: 217px;
+}
+
+.contactos .div {
+  width: 105px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .email-registrado {
+  width: 289.64px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .ciudad-registro {
+  position: absolute;
+  top: 48px;
+  left: 183px;
+  width: 433px;
+  height: 31px;
+  display: flex;
+  gap: 217px;
+}
+
+.contactos .text-wrapper-2 {
+  width: 107px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .distrito-registro {
+  position: absolute;
+  top: 104px;
+  left: 183px;
+  width: 522px;
+  height: 31px;
+  display: flex;
+  gap: 205px;
+}
+
+.contactos .text-wrapper-3 {
+  width: 117px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .nombre-distrito {
+  width: 196px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .nombre-registro {
+  position: absolute;
+  top: 160px;
+  left: 183px;
+  width: 575px;
+  height: 31px;
+  display: flex;
+  gap: 111px;
+}
+
+.contactos .text-wrapper-4 {
+  width: 211px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .text-wrapper-5 {
+  width: 249px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .ruc-registrado {
+  position: absolute;
+  top: 223px;
+  left: 183px;
+  width: 526px;
+  height: 31px;
+  display: flex;
+  gap: 240px;
+}
+
+.contactos .ruc {
+  width: 82px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .text-wrapper-6 {
+  width: 200px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .telf-registro-super {
+  position: absolute;
+  top: 279px;
+  left: 183px;
+  width: 500px;
+  height: 31px;
+  display: flex;
+  gap: 173.2px;
+}
+
+.contactos .text-wrapper-7 {
+  width: 148.81px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .text-wrapper-8 {
+  width: 173.78px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .container-mercado {
+  margin-left: 345px;
+  width: 1041px;
+  height: 460px;
+  position: relative;
+  margin-top: 88px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.contactos .dats-merca {
+  height: 460px;
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 122px;
+  background-color: #000000;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.contactos .btn-editar-merca {
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 919px;
+  width: 122px;
+  display: flex;
+  background-color: #298ce9;
+}
+
+.contactos .btn-eliminar-merca {
+  top: 230px;
+  left: 919px;
+  height: 230px;
+  position: absolute;
+  width: 122px;
+  display: flex;
+  background-color: #ff0000;
+}
+
+.contactos .eliminar-merca {
+  margin-top: 89px;
+  margin-left: 38px;
+  width: 61px;
+  height: 61px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.contactos .perfil-merca {
+  top: 176px;
+  left: 1px;
+  position: absolute;
+  width: 122px;
+  height: 122px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.contactos .posicion-registrado {
+  position: absolute;
+  top: 215px;
+  left: 183px;
+  width: 526px;
+  height: 31px;
+  display: flex;
+  gap: 193px;
+}
+
+.contactos .posicion-merca {
+  width: 129px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .dueo-registro-merca {
+  position: absolute;
+  top: 271px;
+  left: 183px;
+  width: 526px;
+  height: 31px;
+  display: flex;
+  gap: 49px;
+}
+
+.contactos .due-o-merca {
+  width: 273px;
+  height: 31px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .telf-registrado {
+  position: absolute;
+  top: 389px;
+  left: 183px;
+  width: 500px;
+  height: 31px;
+  display: flex;
+  gap: 173.2px;
+}
+
+.contactos .dni-registrado-merca {
+  position: absolute;
+  top: 334px;
+  left: 183px;
+  width: 500px;
+  height: 31px;
+  display: flex;
+  gap: 173.2px;
+}
+
+.contactos .opcion-contacto {
+  margin-left: 1278px;
+  width: 412px;
+  height: 346px;
+  margin-top: 88px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.contactos .btnagrgrmercado {
+  width: 414px;
+  height: 65px;
+  position: relative;
+}
+
+.contactos .agregar-mercado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 412px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 90px;
+}
+
+.contactos .text-wrapper-9 {
+  position: absolute;
+  top: 19px;
+  left: 121px;
+  width: 170px;
+  font-family: "Kay Pho Du-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .btnsupermercado {
+  margin-left: 23px;
+  width: 391px;
+  height: 65px;
+  position: relative;
+}
+
+.contactos .agregar-supermercado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 389px;
+  height: 65px;
+  background-color: #ffffff;
+  border-radius: 90px;
+}
+
+.contactos .text-wrapper-10 {
+  position: absolute;
+  top: 19px;
+  left: 80px;
+  width: 229px;
+  font-family: "Kay Pho Du-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.contactos .btn-contacto {
+  margin-left: 258px;
+  width: 124px;
+  height: 126px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 62px / 63px;
+}
+
+.contactos .agregar-contacto {
+  margin-top: 32px;
+  width: 61px;
+  height: 61px;
+  margin-left: 32px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}

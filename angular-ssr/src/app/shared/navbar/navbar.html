@@ -1,0 +1,46 @@
+<nav class="navbar">
+  <div class="imagen-logo" (click)="onLogoClick()">
+    <div class="logo">
+      <i class="fas fa-mountain"></i>
+    </div>
+  </div>
+  
+  <div class="search-container">
+    <input 
+      type="text" 
+      class="search-box" 
+      [(ngModel)]="searchQuery"
+      [placeholder]="currentPlaceholder"
+      (keyup.enter)="onSearch()">
+    <i class="fas fa-search search-icon" (click)="onSearch()"></i>
+  </div>
+  
+  <div class="nav-icons">
+    <div class="img-notificacion nav-icon" (click)="onNotificationClick()">
+      <i class="fas fa-bell"></i>
+      <span class="notification-badge" *ngIf="notificationCount > 0">
+        {{ notificationCount }}
+      </span>
+    </div>
+    
+    <div class="perfil nav-icon dropdown" 
+         (mouseenter)="showProfileMenu = true" 
+         (mouseleave)="showProfileMenu = false">
+      <i class="fas fa-user-circle" (click)="onProfileClick()"></i>
+      <div class="dropdown-content" *ngIf="showProfileMenu">
+        <a href="#" class="dropdown-item" (click)="goToProfile(); $event.preventDefault()">
+          <i class="fas fa-user"></i>
+          Mi Perfil
+        </a>
+        <a href="#" class="dropdown-item" (click)="logout(); $event.preventDefault()">
+          <i class="fas fa-sign-out-alt"></i>
+          Cerrar Sesión
+        </a>
+      </div>
+    </div>
+    
+    <div class="menu nav-icon" (click)="onMenuClick()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
